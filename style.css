@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #27292D;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px;
+}
+
+.header button{
+    background-color: #27292D;
+    padding: 10px;
+    border: none;
+}
+.header i{
+    background-color: #FF305B;
+}
+.header h1{
+    color: #FF305B;
+}
+
+.container1{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    font-size: 40px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image:url("high-angle-view-crumpled-paper-with-stationery-black-background.jpg");
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.container1 h2{
+    font-size: 20px;
+}
+.content1 h1{
+    font-size: 100px;
+    color: #FF305B;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin:100px auto;
+    gap: 20px;
+}
+.container2 img{
+    height:60vh;
+    border-radius: 15px;
+}
+.line{
+    position: relative;
+    display: inline;
+}
+.before{
+    content: '';
+    width: 5px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background-color: #FF305B;
+    right: -10;
+    top: 13px;
+    /* transform: translateY(-50%); */
+}
+hr {
+    border: none;
+    border-top: 1px dotted rgb(0, 0, 0);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+   margin-top: 20px;
+   margin-bottom: 10px;
+  }
+
+#p1{
+    font-size: 40px;
+}
+
+.content2Down{
+    display: inline-block;
+
+}
+.container2 p{
+    margin: 15px ;
+}
+  .button3:hover {
+    background-color: white;
+    color: #FF305B;
+  }
+  .button {
+    background-color: #FF305B; /* Green */
+    border: 2px solid #f44336;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+
+  .container3{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container3 p{
+    width: 100%;
+    text-align: center;
+  }
+  .content3 {
+    padding: 30px;
+    margin: 10px 0;
+    background-color: azure;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Optional: centers the text within the elements */
+    height: 20vh; /* Adjust as needed */
+}
+.content3 i{
+    margin: 20px 0;
+}
+
+
+
+
+@media (min-width:768px) {
+    .content3 {
+        width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Optional: centers the text within the elements */
+    height: 20vh; /* Adjust as needed */
+    }
+}
+  @media (min-width:992px) {
+    .container2{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .container2 img{
+        height: 50vh;
+    }
+    .content2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .content3 {
+        width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Optional: centers the text within the elements */
+    height: 20vh; /* Adjust as needed */
+    }
+}
