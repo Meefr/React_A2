@@ -3,7 +3,6 @@
     padding: 0;
     font-family: "Source Sans 3",sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     scroll-margin-block-start: 110px;
     scroll-margin-block-end: 110px;
@@ -15,7 +14,7 @@ html{
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: #27292D;
+    /* background-color: #0A0B0F; */
     justify-content: space-between;
     left: 0;
     right: 0;
@@ -25,7 +24,7 @@ html{
 
 
 .header button{
-    background-color: #27292D;
+    background-color: #0A0B0F;
     padding: 10px;
     border: none;
 }
@@ -45,8 +44,9 @@ html{
     color: white;
     justify-content: center;
     align-items: center;
-    background-image:url("high-angle-view-crumpled-paper-with-stationery-black-background.jpg");
+    background-image:url("ben-griffiths-l7R85WBKl1c-unsplash.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 50px;
 }
 
@@ -328,10 +328,10 @@ iframe{
 .outer{
     display: flex;
     justify-content: center;
-    height: 10vh;
+    height: 20vh;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     background-color: #27292D;
 }
 .outer p{
@@ -341,7 +341,7 @@ iframe{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
 .outer a{
     color: #E2E2E2;
