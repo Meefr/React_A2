@@ -57,6 +57,68 @@ html{
     font-size: 100px;
     color: #FF305B;
 }
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stxt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400; 
+}
+.wrapper{
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #060809;
+    display: flex;
+    text-align: left;
+    gap: 20px;
+}
+.wrapper .dtxt{
+    line-height: 90px;
+    margin-left: 15px;
+    height: 90px;
+    overflow: hidden;
+}
+.dtxt li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: #FF305B;
+    position: relative;
+    top: 0;
+    animation: slideing 12s steps(4) infinite;
+}
+
+@keyframes slideing {
+    100%{
+        top: -360px;
+    } 
+}
+.dtxt li span{
+  position: relative;
+}
+.dtxt li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-color: #060809;
+    border-left: 2px solid #FF305B;
+    left: 0;
+    animation: typing 1.5s steps(10) infinite alternate;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    } 
+}
+
 
 .container2{
     display: flex;
