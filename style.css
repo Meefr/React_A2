@@ -6,6 +6,7 @@
     font-style: normal;
     scroll-margin-block-start: 110px;
     scroll-margin-block-end: 110px;
+    cursor:default;
 }
 html{
     scroll-behavior: smooth;
@@ -412,7 +413,7 @@ iframe{
 }
 .outer a:hover{
     scale: 1.5;
-    color: #FF305B;
+    color: #FF305B;cursor: pointer;
 }
 @media (min-width:768px) {
     .content3 {
