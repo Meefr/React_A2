@@ -10,7 +10,7 @@
 }
 :root{
     --main-color:#fff;
-    --secound-color:var(--secound-color,#FF30A9);
+    --secound-color:#FF30A9;
     --important-color:#E2E2E2;
     --transition: all .5s ease;
 }
