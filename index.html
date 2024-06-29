@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet"
           href=
@@ -21,13 +24,37 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header flex-center-spacebetween" id="secssion1">
-        <h1>Meefr</h1>
-        <button>
-            <i class="fa fa-bars"></i>
-        </button>
-    </div>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container-fluid d-flex justify-content-around">
+          <a class="navbar-brand main-color" href="#">Meefr</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
     <div class="container1 flex-center-center">
         <div class="content1 flex-center-center">
             <h2>Hello, I'm</h2>
@@ -107,12 +134,42 @@
     <div class="container4">
         <p id="ourServices">Our Portfolio</p>
         <div class="images">
-            <img src="1.jpg" alt="">
-            <img src="2.jpg" alt="">
-            <img src="3.jpg" alt="">
-            <img src="4.jpg" alt="">
-            <img src="5.jpg" alt="">
-            <img src="6.jpg" alt="">
+            <div class="box">
+                <img src="1.jpg" alt="">
+                <div class="box-bg">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="2.jpg" alt="">
+                <div class="box-bg">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="3.jpg" alt="">
+                <div class="box-bg">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="4.jpg" alt="">
+                <div class="box-bg">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="5.jpg" alt="">
+                <div class="box-bg">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="6.jpg" alt="">
+                <div class="box-bg">
+                    <i class="fa-regular fa-image"></i>
+                </div>
+            </div>
         </div>
     </div>
 </div>

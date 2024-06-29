@@ -12,6 +12,10 @@
     --main-color:#fff;
     --secound-color:#FF305B;
     --important-color:#E2E2E2;
+    --transition: all .5s ease;
+}
+.main-color{
+    color: #FF305B;
 }
 .flex-center-center{
     display: flex;
@@ -106,6 +110,24 @@ html{
     position: relative;
     top: 0;
     animation: slideing 12s steps(4) infinite;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #FF305B;
+}
+.navbar-light .navbar-brand {
+    color: #FF305B;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link{
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: all 0.5s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF305B;
 }
 
 @keyframes slideing {
@@ -209,6 +231,7 @@ hr {
     display: flex;
     background-color: var(--important-color);
     justify-content: center;
+    
     padding-bottom: 60px;
   }
   .container3{
@@ -266,14 +289,47 @@ hr {
     gap: 30px;
 }
 
-.images img:hover{
+
+.box{
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.box-bg{ 
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: calc(100%);
+    height: calc(100%);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: .4s opacity;
+}
+.box-bg i{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    opacity: 0;
+}
+
+.box:hover .box-bg{
+    opacity: 1;
+}
+.box-bg i{
+    opacity: 1;
+}
+.box:hover{
     scale: 1.2;
     flex-direction: column;
 }
+
 .images img{
+    height: 100%;
     width: 45vh;
     transition: 0.5s ease-out;
 }
+
 .infos{
     background-color:var(--important-color);
     padding: 100px;
