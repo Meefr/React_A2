@@ -237,7 +237,7 @@ html{
 .wrapper{
     box-sizing: border-box;
     border-radius: 20px;
-    /* padding: 40px; */
+    padding: 20px;
     background-color: #060809;
     display: flex;
     text-align: left;
@@ -259,8 +259,54 @@ html{
     top: 0;
     animation: slideing 12s steps(4) infinite;
 }
+.contact-us-container{
+    padding-bottom: 30px;
+}
 
-
+.contact-us {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.contact-us-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+.contact-us-row input, 
+.contact-us-row textarea {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-us-row textarea {
+    height: 100px;
+}
+.contact-us-row:last-child input {
+    margin-right: 0;
+}
+.contact-us button {
+    padding: 10px 20px;
+    border: 1px solid var(--secound-color);
+    border-radius: 5px;
+    background-color: var(--secound-color);
+    color: #fff;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.contact-us button:hover{
+    background-color: transparent;
+    color: var(--secound-color);
+}
+.contact-us-row input:focus, 
+        .contact-us-row textarea:focus {
+            border-color: var(--secound-color);
+            outline: none; 
+        }
 @keyframes slideing {
     100%{
         top: -360px;
