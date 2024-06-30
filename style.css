@@ -607,7 +607,7 @@ hr {
 }
 .content5items{
     gap: 50px;
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
     justify-content: center;
     align-items: start;
@@ -795,10 +795,10 @@ iframe{
     align-items: center;
     text-align: center;
     height: 20vh; 
+}
     .wrapper{
         padding: 30px;
     }
-}
 }
 @media (min-width:992px) {
     .move-up{
