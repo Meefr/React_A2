@@ -17,6 +17,26 @@
 .second-color{
     color: var(--secound-color);
 }
+.move-up{
+    position: fixed;
+    bottom: 100px;
+    right:50px;
+    background-color: #555555;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: none;
+}
+.move-up-show{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.move-up i{
+    color: white;  
+}
+
 .setting{
     position: fixed;
     top: 100px;
@@ -34,6 +54,7 @@
     border-bottom-right-radius : 10px;
     height: 30px;
 }
+
 .custome-container{
     width: 100vw;
 }
