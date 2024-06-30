@@ -666,15 +666,46 @@ iframe{
     justify-content: space-between;
     gap: 10px;
 }
-.outer a{
+.outer a , .content2-bg-item a{
     color: var(--important-color);
     text-decoration: none;
     transition: 0.4s;
     font-weight: bold;
 }
-.outer a:hover{
+.outer a:hover , .content2-bg-item a:hover{
     scale: 1.5;
     color: var(--secound-color);cursor: pointer;
+}
+
+.container2-img{
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+    overflow: hidden;
+}
+.content2-bg{
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 450px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.content2-bg-item{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container2-img:hover .content2-bg{
+    display: flex;
+    top:0;
+    opacity: 1;
 }
 
 
