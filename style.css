@@ -602,6 +602,9 @@ hr {
 .content5items img{
     border-radius: 50%;
 }
+.navbar-toggler{
+    background-color: var(--secound-color);
+}
 .content5items{
     gap: 50px;
     width: 50%;
