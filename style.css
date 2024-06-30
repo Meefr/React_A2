@@ -613,6 +613,7 @@ hr {
     background-color: var(--important-color);
     padding: 50px;
     position: relative;
+    overflow: hidden;
 }
 .content5items img,.item5{
     z-index: 1;
