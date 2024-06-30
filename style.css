@@ -195,6 +195,7 @@ html{
 .navbar-scrolling{
     translate: 0 -90px;
     background-color: #27292D;
+    opacity: 0;
 }
 .navbar{
     color: transparent;
@@ -234,13 +235,19 @@ html{
     font-size: 60px;
     font-weight: 400; 
 }
+
+.wrapper-container{
+    box-sizing: border-box;
+    /* width: 100px; */
+}
 .wrapper{
     box-sizing: border-box;
     border-radius: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #060809;
     display: flex;
     text-align: left;
+    flex-wrap: wrap;
     /* gap: 20px; */
 }
 .wrapper .dtxt{
@@ -784,13 +791,18 @@ iframe{
     align-items: center;
     text-align: center;
     height: 20vh; 
-    
+    .wrapper{
+        padding: 30px;
+    }
 }
 }
 @media (min-width:992px) {
     .move-up{
         bottom: 70px;
         right:50px;
+    }
+    .wrapper{
+        padding: 30px;
     }
     .videocontainer{
         flex-wrap: nowrap;
